@@ -1,67 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo</title>
-  </head>
-  
-  <body>
-      <h1>Recommended Books</h1>
-      <?php
-        $books = [
-          [
-            'name' => "Do android dream",
-            'author' => "D",
-            'releaseYear' => 2011,
-            'url' => "Hail",
-          ],
-          [
-            'name' => "Do I Dream",
-            'author' => "Lango",
-            'releaseYear' => 2012,
-            'url' => "Hail Mary",
-          ]
-          ];
+<?php 
 
-          function filterByAuthor($books, $author){
-            $filteredBooks = [];
+$business = [
+    'name'          => 'Emms',
+    'cost'          => 20,
+    'categories'    => ['Testing', 'PHP', 'JavaScript']
+];
 
-            foreach($books as $book){
-              if($book['author'] === $author){
-                $filteredBooks[] = $book;
-              }
-            }
-            
-            return $filteredBooks;
-          };
-      ?>
-
-      <ul>
-        <?php foreach (filterByAuthor($books, 'Lango') as $book) : ?>
-             <li>
-                <a href="<?= $book['url'] ?>">
-                  <?= $book['name'], ' - ' . $book['author'], ' (' . $book['releaseYear'] . ')'  ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-      </ul>
+function register($user){
     
+}
 
-  </body>
-</html>
-
-
-      <?php 
-        $name = 'Dark Matter';
-        $read = true;
-        
-      ?>
-    
-      <?php 
-      if($read === true) {
-        // echo "You have read $name";
-      }else{
-        // echo "You haven't read $name";
-      }
-      ?>
+require 'index.view.php';
