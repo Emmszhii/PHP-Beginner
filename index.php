@@ -5,9 +5,10 @@ $business = [
     'cost'          => 20,
     'categories'    => ['Testing', 'PHP', 'JavaScript']
 ];
+$heading = 'Home';
 
 function register($user){
     
 }
 
-require 'index.view.php';
+require './views/index.view.php';
