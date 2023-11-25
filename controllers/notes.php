@@ -1,5 +1,7 @@
 <?php
+
 $heading = 'My Notes';
+
 $config = require('config.php');
 $db = new Database($config['database']);
 
